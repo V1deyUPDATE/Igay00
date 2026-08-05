@@ -143,14 +143,14 @@
       var btnBatal = document.getElementById('ageBatal');
       var popupShown = false; // Biar popup gak nongol 2x pas user back
 
-      // Munculin popup 15 DETIK setelah web kebuka, cuma sekali
+      // Munculin popup 30 DETIK setelah web kebuka, cuma sekali
       setTimeout(function(){
         if(!popupShown){
           overlay.classList.add('show');
           document.documentElement.style.overflow = 'hidden';
           popupShown = true;
         }
-      }, 15000); // 15 DETIK
+      }, 30000); // 30 DETIK
 
       // Klik LANJUT = delay 200ms biar popunder kena, terus ke directlink
       btnLanjut.onclick = function(){
